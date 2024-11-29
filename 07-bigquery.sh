@@ -9,7 +9,7 @@ bq mk \
  -t \
  --expiration 3600 \
  --description "Test Login Table" \
- $DATASET.login-test \
+ $DATASET_NAME.login-test \
  email:STRING,date:DATETIME,success:BOOLEAN
 
 }
