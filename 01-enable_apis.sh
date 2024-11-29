@@ -21,8 +21,8 @@ gcloud services enable \
   cloudbuild.googleapis.com \
   bigquery.googleapis.com \
   secretmanager.googleapis.com \
-  artifactregistry.googleapis.com
-  
+  artifactregistry.googleapis.com;
+
 # Mensaje de confirmación
 echo "Todas las APIs necesarias han sido habilitadas en el proyecto $PROJECT_ID."
 
