@@ -42,7 +42,7 @@ export SUBNET_CONNECTOR_RANGE="10.1.2.0/28"
 export VPC_CONNECTOR_NAME="$STARTUP_NAME-vpc-connector"
 
 
-export DATASET_NAME="test-dataset"
+export DATASET_NAME="${STARTUP_NAME}_dataset"
 
 
 source ./01-enable_apis.sh

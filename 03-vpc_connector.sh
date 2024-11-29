@@ -30,7 +30,7 @@ gcloud compute networks vpc-access connectors create $VPC_CONNECTOR_NAME \
   --region $REGION \
   --subnet $SUBNET_CONNECTOR_NAME \
   --machine-type e2-micro \
-  --min-instances 1 \
+  --min-instances 2 \
   --max-instances 5
 
  }
