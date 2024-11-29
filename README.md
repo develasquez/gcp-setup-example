@@ -43,8 +43,8 @@ This setup script supports the overall architecture by provisioning the followin
 1.  **Clone the repository:**
 
     ```bash
-    git clone [repository_url]
-    cd gcp-basic-setup
+    git clone https://github.com/develasquez/gcp-setup-example
+    cd gcp-setup-example
     ```
 
 2.  **Customize `00-main_setup.sh`:**
@@ -62,7 +62,7 @@ This setup script supports the overall architecture by provisioning the followin
 3.  **Run the setup script:**
 
     ```bash
-    bash 00-main_setup.sh
+    ./00-main_setup.sh
     ```
 
 The script will execute and create the necessary GCP resources.
