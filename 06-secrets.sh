@@ -31,4 +31,13 @@ gcloud secrets create DB_USER \
 echo -n "$DB_USER" | \
     gcloud secrets versions add DB_USER --data-file=-
 
+echo -n "$AUTH_PLATFORM_KEY" | \
+    gcloud secrets versions add AUTH_PLATFORM_KEY --data-file=-
+
+
+
+echo -n "$AUTH_PLATFORM_DOMAIN" | \
+    gcloud secrets versions add AUTH_PLATFORM_DOMAIN --data-file=-
+
+
 }

@@ -17,6 +17,7 @@ export PROJECT_NUMBER=$(gcloud projects list \
 --filter="$(gcloud config get-value project)" \
 --format="value(PROJECT_NUMBER)")
 
+
 export REGION="southamerica-west1"
 
 

@@ -19,4 +19,8 @@ gcloud projects add-iam-policy-binding $PROJECT_ID \
   --member="serviceAccount:$PROJECT_NUMBER@cloudbuild.gserviceaccount.com" \
   --role="roles/run.builder"
 
+  gcloud projects add-iam-policy-binding $PROJECT_ID \
+  --member="serviceAccount:$PROJECT_NUMBER-compute@developer.gserviceaccount.com" \
+  --role="roles/secretmanager.secretAccessor"
+
 }
