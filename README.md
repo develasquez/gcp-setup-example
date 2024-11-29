@@ -1,4 +1,4 @@
-```markdown
+
 # Axmos GCP Startup Starter Kit
 
 ## Project Overview
@@ -88,4 +88,3 @@ The setup process is divided into multiple scripts for better organization:
 Contributions are welcome!  If you find any issues or have suggestions for improvements, please open a pull request or create an issue in the repository.
 
 
-```
