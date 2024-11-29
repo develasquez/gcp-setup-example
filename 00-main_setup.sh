@@ -45,7 +45,7 @@ export VPC_CONNECTOR_NAME="$STARTUP_NAME-vpc-connector"
 export DATASET_NAME="test-dataset"
 
 
-source ./01-enable-apis.sh
+source ./01-enable_apis.sh
 source ./02-vpc.sh
 source ./03-vpc_connector.sh
 source ./04-artifact_registry.sh
