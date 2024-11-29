@@ -5,11 +5,21 @@
 
 This repository provides a set of bash scripts to automate the creation of fundamental Google Cloud Platform (GCP) resources, forming a base infrastructure for your startup projects.  It streamlines the setup of essential services like VPC networking, Cloud SQL, Artifact Registry, Secret Manager, and BigQuery, saving you valuable time and effort in the initial stages of your project.  This setup provides a secure and scalable foundation for deploying and managing applications, allowing you to focus on building core features.
 
+there is two other repositories related to this project:
+
+[Front End Project](https://github.com/develasquez/gcp-front-end-example)
+
+[Back End Project](https://github.com/develasquez/gcp-back-end-example)
+
+
 ## Architecture
 
 This setup script supports the overall architecture by provisioning the following key components:
 
 ![Axmos Startup Starter Kit Architecture](Arch%20-%20Startup%20Starter%20Kit.png)
+
+
+
 
 
 *   **VPC Networking:** Creates a Virtual Private Cloud (VPC) network with a subnet, along with firewall rules to secure access via Identity-Aware Proxy (IAP) for SSH and RDP.  This provides a secure and isolated environment for your GCP resources.
