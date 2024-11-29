@@ -10,6 +10,13 @@
 #Nombre de startup solo en minusculas y con "-" en vez de espacios
 export $STARTUP_NAME=""
 export PROJECT_ID=""
+
+gcloud config set project $PROJECT_ID;
+
+export PROJECT_NUMBER=$(gcloud projects list \
+--filter="$(gcloud config get-value project)" \
+--format="value(PROJECT_NUMBER)")
+
 export REGION="southamerica-west1"
 
 
@@ -41,8 +48,16 @@ export SUBNET_CONNECTOR_NAME="$STARTUP_NAME-subnet-connector"
 export SUBNET_CONNECTOR_RANGE="10.1.2.0/28"
 export VPC_CONNECTOR_NAME="$STARTUP_NAME-vpc-connector"
 
-
+# Bigquery
 export DATASET_NAME="${STARTUP_NAME}_dataset"
+
+# Permisions
+
+export CLOUD_BUILD_SERVICE_ACCOUNT=%PROJECT_ID%@cloudbuild.gserviceaccount.com
+export CLOUD_RUN_DEPLOYER_ROLE=roles/run.admin
+export STORAGE_ADMIN_ROLE=roles/storage.admin
+export API_GATEWAY_ADMIN_ROLE=roles/apigateway.admin
+
 
 
 source ./01-enable_apis.sh
@@ -52,6 +67,7 @@ source ./04-artifact_registry.sh
 source ./05-cloud_sql.sh
 source ./06-secrets.sh
 source ./07-bigquery.sh
+source ./08-permisions.sh
 
 
 #Run Config
@@ -62,4 +78,5 @@ artifact;
 sql;
 secrets;
 bigquery;
+permisions;
 
