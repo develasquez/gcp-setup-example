@@ -52,6 +52,12 @@ export VPC_CONNECTOR_NAME="$STARTUP_NAME-vpc-connector"
 # Bigquery
 export DATASET_NAME="${STARTUP_NAME}_dataset"
 
+# Auth
+
+
+export AUTH_PLATFORM_KEY=""
+export AUTH_PLATFORM_DOMAIN=""
+
 
 source ./01-enable_apis.sh
 source ./02-vpc.sh

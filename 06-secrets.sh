@@ -39,5 +39,4 @@ echo -n "$AUTH_PLATFORM_KEY" | \
 echo -n "$AUTH_PLATFORM_DOMAIN" | \
     gcloud secrets versions add AUTH_PLATFORM_DOMAIN --data-file=-
 
-
 }
