@@ -8,7 +8,7 @@
 #General Vars
 
 #Nombre de startup solo en minusculas y con "-" en vez de espacios
-export $STARTUP_NAME=""
+export STARTUP_NAME=""
 export PROJECT_ID=""
 
 gcloud config set project $PROJECT_ID;
