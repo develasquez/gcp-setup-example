@@ -51,14 +51,6 @@ export VPC_CONNECTOR_NAME="$STARTUP_NAME-vpc-connector"
 # Bigquery
 export DATASET_NAME="${STARTUP_NAME}_dataset"
 
-# Permisions
-
-export CLOUD_BUILD_SERVICE_ACCOUNT=%PROJECT_ID%@cloudbuild.gserviceaccount.com
-export CLOUD_RUN_DEPLOYER_ROLE=roles/run.admin
-export STORAGE_ADMIN_ROLE=roles/storage.admin
-export API_GATEWAY_ADMIN_ROLE=roles/apigateway.admin
-
-
 
 source ./01-enable_apis.sh
 source ./02-vpc.sh
